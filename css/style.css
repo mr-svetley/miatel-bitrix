@@ -303,7 +303,7 @@ template {
 
 @font-face {
   font-family: 'Exo 2';
-  src: url("fonts/exo2-regular.woff2") format("woff2"), url("fonts/exo2-regular.woff") format("woff");
+  src: url("../fonts/exo2-regular.woff2") format("woff2"), url("../fonts/exo2-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
