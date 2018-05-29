@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Miatel - login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/exo2-regular.woff2" as="font">
+    <link rel="preload" href="fonts/exo2-medium.woff2" as="font">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="page__centerer header__centerer">
+            <img src="img/logo.png" alt="Логотип МИАТЕЛ" class="header__logo" width="139" height="34">
+            <ul class="header__contacts">
+                <li class="header__contacts-item">8 (800) 775-88-75</li>
+                <li class="header__contacts-item">info@miatel.ru</li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="page__centerer">
+            <form action="#" class="login-form">
+                <p class="login-form__intro">Введите ключ из личного кабинета</p>
+                <div class="login-form__group">
+                    <label class="login-form__field field">
+                        <span class="field__title">Ключ</span>
+                        <input type="text" class="field__input">
+                        <span class="field__icon"></span>
+                        <p class="field__message"></p>
+                    </label>
+                </div>
+                <button type="submit" class="btn login-form__btn">Сохранить</button>
+            </form>
+        </div>
+
+        <div class="page__centerer">
+            <form action="#" class="login-form">
+                <p class="login-form__intro">Введите ключ из личного кабинета</p>
+                <div class="login-form__group login-form__group--success">
+                    <label class="login-form__field field field--success">
+                        <span class="field__title">Ключ</span>
+                        <input type="text" class="field__input">
+                        <span class="field__icon"></span>
+                        <p class="field__message">Токен сгенерирован. Можно использовать АТС.</p>
+                    </label>
+                </div>
+                <button type="submit" class="btn login-form__btn">Сохранить</button>
+            </form>
+        </div>
+
+        <div class="page__centerer">
+            <form action="#" class="login-form">
+                <p class="login-form__intro">Введите ключ из личного кабинета</p>
+                <div class="login-form__group login-form__group--error">
+                    <label class="login-form__field field field--error">
+                        <span class="field__title">Ключ</span>
+                        <input type="text" class="field__input">
+                        <span class="field__icon"></span>
+                        <p class="field__message">Что то пошло не так, попробуйте еще раз.</p>
+                    </label>
+                </div>
+                <button type="submit" class="btn login-form__btn">Сохранить</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        
+    </footer>
+</body>
+</html>

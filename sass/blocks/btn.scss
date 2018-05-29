@@ -1,0 +1,25 @@
+.btn {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    min-width: 175px;
+    font: 17px/45px $font;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: $accent-color;
+    box-shadow: 0 5px 17px 0 rgba($accent-color, 0.5);
+    text-align: center;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: $accent-color-dark;
+    box-shadow: 0 5px 17px 0 rgba($accent-color-dark, 0.5);
+}
+
+.btn:active {
+    box-shadow: none;
+}

@@ -1,0 +1,45 @@
+.login-form {
+    font-family: "Exo 2", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 35px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-form__intro {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    margin-top: 0;
+}
+
+.login-form__group {
+    border: 1px solid $gray-dark;
+    border-radius: 2px;
+    padding: 42px 68px;
+    padding-left: 58px;
+    padding-bottom: 29px;
+    margin-bottom: 38px;
+    min-width: 450px;
+
+    &--error {
+        border-color: $error;
+    }
+
+    &--success {
+        border-color: $success;
+    }
+
+    &--alert {
+        border-color: $accent-color;
+    }
+}
+
+.login-form__field {
+    margin-bottom: 13px;
+}

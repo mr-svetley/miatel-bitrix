@@ -1,0 +1,10 @@
+.page {
+    min-width: 480px;
+    margin: 0;
+}
+
+.page__centerer {
+    margin: 0 auto;
+    max-width: $page-width;
+    padding: 0 15px; 
+}

@@ -1,0 +1,100 @@
+.field {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    &--error {
+        .field__message {
+            color: $error;
+        }
+
+        .field__icon {
+            top: 8px;
+            right: 12px;
+            width: 17px;
+            height: 17px;
+            border: 1px solid $error;
+            border-radius: 50%;
+    
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                transform-origin: center;
+                height: 1px;
+                width: 100%;
+                top: 7px;
+                left: 0;
+                transform: rotate(45deg);
+                background-color: $error;
+            }
+    
+            &::after {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    &--success {
+        .field__message {
+            color: $success;
+        }
+
+        .field__icon {
+            top: 0;
+            right: 3px;
+            width: 33px;
+            height: 33px;
+    
+            &::before {
+                content: "";
+                position: absolute;
+                transform-origin: right bottom;
+                height: 9px;
+                width: 16px;
+                top: 3px;
+                left: 7px;
+                transform: rotate(-45deg);
+                border-left: 1px solid $success;
+                border-bottom: 1px solid $success;
+            }
+        }
+    }
+}
+
+.field__title {
+    display: block;
+    width: 68px;
+    color: $gray-dark;
+    padding-right: 10px;
+}
+
+.field__input {
+    padding: 0;
+    font-size: 15px;
+    line-height: 33px;
+    font-family: $font;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: $gray;
+    flex-grow: 1;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+.field__icon {
+    position: absolute;
+}
+
+.field__message {
+    width: 100%;
+    padding-left: 68px;
+    margin: 0;
+    padding-top: 2px;
+    font-size: 11px;
+    line-height: 15px;
+    margin-bottom: -17px;
+    min-height: 17px;
+}
