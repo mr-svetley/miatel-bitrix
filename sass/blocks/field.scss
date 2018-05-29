@@ -5,6 +5,10 @@
     flex-wrap: wrap;
 
     &--error {
+        .field__input {
+            padding-right: 40px; 
+        }
+
         .field__message {
             color: $error;
         }
@@ -37,6 +41,10 @@
     }
 
     &--success {
+        .field__input {
+            padding-right: 40px; 
+        }
+
         .field__message {
             color: $success;
         }
@@ -82,8 +90,14 @@
     background-color: $gray;
     flex-grow: 1;
     padding-left: 10px;
-    padding-right: 40px;
+    padding-right: 10px;
     align-self: flex-start;
+    min-width: 50px;
+
+    &--small {
+        flex-grow: 0;
+        width: 35%;
+    }
 }
 
 .field__icon {
