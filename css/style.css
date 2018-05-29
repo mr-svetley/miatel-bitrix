@@ -445,7 +445,8 @@ input[type="file"] {
   display: block;
   width: 68px;
   color: #a6a6a6;
-  padding-right: 10px; }
+  padding-right: 10px;
+  word-break: break-all; }
 
 .field__input {
   padding: 0;
