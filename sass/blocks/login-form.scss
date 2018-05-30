@@ -23,7 +23,6 @@
     border-radius: 2px;
     padding: 42px 68px;
     padding-left: 58px;
-    padding-bottom: 29px;
     margin-bottom: 38px;
     min-width: 450px;
 
@@ -40,6 +39,6 @@
     }
 }
 
-.login-form__field {
+.login-form__field:not(:last-child) {
     margin-bottom: 13px;
 }

@@ -13,11 +13,8 @@
 }
 
 .header__contacts {
+    @include list-reset;
     margin-left: auto;
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
     font: 13px/1.5 $font;
     font-weight: 500;
     text-align: right;

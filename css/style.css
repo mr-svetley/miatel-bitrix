@@ -375,7 +375,8 @@ input[type="file"] {
 .btn:focus {
   background-color: #db6b32;
   -webkit-box-shadow: 0 5px 17px 0 rgba(219, 107, 50, 0.5);
-  box-shadow: 0 5px 17px 0 rgba(219, 107, 50, 0.5); }
+  box-shadow: 0 5px 17px 0 rgba(219, 107, 50, 0.5);
+  outline: none; }
 
 .btn:active {
   -webkit-box-shadow: none;
@@ -446,7 +447,6 @@ input[type="file"] {
       border-bottom: 1px solid #34b700; }
 
 .field__title {
-  display: block;
   width: 68px;
   color: #a6a6a6;
   padding-right: 10px;
@@ -502,11 +502,11 @@ input[type="file"] {
   height: 34px; }
 
 .header__contacts {
-  margin-left: auto;
-  list-style: none;
   padding-left: 0;
+  list-style: none;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: auto;
   font: 13px/1.5 "Exo 2", "Tahoma", sans-serif;
   font-weight: 500;
   text-align: right; }
@@ -541,7 +541,6 @@ input[type="file"] {
   border-radius: 2px;
   padding: 42px 68px;
   padding-left: 58px;
-  padding-bottom: 29px;
   margin-bottom: 38px;
   min-width: 450px; }
   .login-form__group--error {
@@ -551,5 +550,5 @@ input[type="file"] {
   .login-form__group--alert {
     border-color: #ec7539; }
 
-.login-form__field {
+.login-form__field:not(:last-child) {
   margin-bottom: 13px; }
